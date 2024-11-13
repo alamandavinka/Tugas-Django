@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mailbox</title>
+    </head>
+    <body>
+        <h1>Mailbox</h1>
+        <h2>Send message to admin here:</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="send">
+        </form>
+    </body>
+</html>
